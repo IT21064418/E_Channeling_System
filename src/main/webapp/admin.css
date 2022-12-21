@@ -1,0 +1,187 @@
+@charset "ISO-8859-1";
+
+*{
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;  
+}
+
+/*---- sub header ----*/
+
+.sub-header{
+	height: 300px;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+	url(../images/header.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+
+.sub-header h1{
+	margin-top: 30px;
+}
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav img{
+	width: 150px;
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.nav-links ul li::after{
+	content:'';
+	width: 0%;
+	height: 2px;
+	background: #F8FD02;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+
+p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;	
+}
+
+
+
+/*--- Admin feedback  ---*/
+
+.admin-content {
+	height: calc(100% -200px);
+	padding: 40px 100px 100px;
+}
+
+.admin-btn{
+	display: inline-block;
+	text-decoration: none;
+	color: #333;
+	border: 1px solid #063970;
+	padding: 12px 34px;
+	font-size:  13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.admin-btn:hover {
+	border: 1px solid #F8FD02;
+	background: #F8FD02;
+    transition: 1s;	
+}
+
+.admin-btn a {
+	color: #333;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.content table {
+	margin-top: 50px;
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 1.1 ren;
+	border-top: 1px solid blue;
+	border-bottom: 1px solid blue;
+}
+
+.content table td {
+	padding: 15px;
+	text-align: left;
+	border-top: 1px solid #F8FD02;
+}
+
+.content table th {
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid blue;
+}
+
+.update{
+	color: #333;
+	text-decoration: none;	
+}
+
+.delete{
+	color: red;
+	text-decoration: none;	
+}
+
+.update:hover {
+	text-decoration: underline;
+}
+
+.delete:hover {
+	text-decoration: underline;
+}
+
+/*--- add flight page ---*/
+
+.new-flight{
+	margin-top: 50px;
+}
+
+.content input{
+	margin-top: 5px;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 17px;
+	outline: none;
+	border: 1px solid #063970;
+}
+
+/*--- add staff account page ---*/
+
+.add-account{
+	margin-top: 50px;
+}
